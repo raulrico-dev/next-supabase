@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --opacity-100: 1.0;
+  --opacity-80: 0.80;
+
+  --white-color: rgba(251,251,254,var(--opacity-100));
+  --white-color-80: rgba(251,251,254,var(--opacity-80));
+
+  --black-color: rgb(2,2,6);
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  /* position: relative; */
+}
+
+html,body {
+  background-color: var(--black-color);
+}
+
+body {
+  color: var(--white-color-80);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
